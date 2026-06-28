@@ -6,17 +6,13 @@
 namespace optiling {
 static ge::graphStatus TilingFunc(gert::TilingContext* context)
 {
+    uint32_t totalLength = context->GetInputShape(0)->GetOriginShape().GetShapeSize();
+    context->SetBlockDim(8);
+    TilingDataTemplate* Tiling = context->GetTilingData<TilingDataTemplate>();
+    Tiling->totalLength = totalLength;
+    Tiling->tileNum = (totalLength + 7) / 8;
 
-  AddCustomTemplateTilingData *tiling = context->GetTilingData<AddCustomTemplateTilingData>();
-  const gert::StorageShape* x1_shape = context->GetInputShape(0);
-  int32_t data_sz = 1;
-  for (int i = 0; i < x1_shape->GetStorageShape().GetDimNum(); i++)
-    data_sz *= x1_shape->GetStorageShape().GetDim(i);
-  tiling->size = data_sz;
-  context->SetBlockDim(8);
-  size_t *currentWorkspace = context->GetWorkspaceSizes(1);
-  currentWorkspace[0] = 0;
-  return ge::GRAPH_SUCCESS;
+     return ge::GRAPH_SUCCESS;
 }
 }
 
