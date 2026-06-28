@@ -1,0 +1,56 @@
+{
+  "AddCustomTemplate": {
+    "dynamicRankSupport": true,
+    "simplifiedKeyMode": 0,
+    "optionalInputMode": "gen_placeholder",
+    "optionalOutputMode": "gen_placeholder",
+    "params": {
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "paramType": "required",
+          "formatMode": "static_nd_agnostic"
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "paramType": "required",
+          "formatMode": "static_nd_agnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "paramType": "required",
+          "formatMode": "static_nd_agnostic"
+        }
+      ]
+    },
+    "binaryList": [
+      {
+        "coreType": 2,
+        "simplifiedKey": [
+          "AddCustomTemplate/d=0,p=1/0,2/0,2/0,2",
+          "AddCustomTemplate/d=0,p=0/0,2/0,2/0,2",
+          "AddCustomTemplate/d=1,p=1/0,2/0,2/0,2",
+          "AddCustomTemplate/d=1,p=0/0,2/0,2/0,2"
+        ],
+        "binPath": "ascend910b/add_custom_template/AddCustomTemplate_816f04e052850554f4b3cacb35f8e8c6.o",
+        "jsonPath": "ascend910b/add_custom_template/AddCustomTemplate_816f04e052850554f4b3cacb35f8e8c6.json"
+      },
+      {
+        "coreType": 2,
+        "simplifiedKey": [
+          "AddCustomTemplate/d=0,p=1/1,2/1,2/1,2",
+          "AddCustomTemplate/d=0,p=0/1,2/1,2/1,2",
+          "AddCustomTemplate/d=1,p=1/1,2/1,2/1,2",
+          "AddCustomTemplate/d=1,p=0/1,2/1,2/1,2"
+        ],
+        "binPath": "ascend910b/add_custom_template/AddCustomTemplate_862645f6bafeab7b8e397662e7e517c2.o",
+        "jsonPath": "ascend910b/add_custom_template/AddCustomTemplate_862645f6bafeab7b8e397662e7e517c2.json"
+      }
+    ]
+  }
+}

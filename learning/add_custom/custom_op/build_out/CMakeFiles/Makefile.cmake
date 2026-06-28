@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/developer/Ascend/cann-8.5.2/compiler/tikcpp/ascendc_kernel_cmake/ASCConfig.cmake"
   "/home/developer/Ascend/cann-8.5.2/compiler/tikcpp/ascendc_kernel_cmake/ASC_CMake/FindASC.cmake"
   "/home/developer/Ascend/cann-8.5.2/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/config.cmake"
   "/home/developer/Ascend/cann-8.5.2/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/func.cmake"
   "/home/developer/Ascend/cann-8.5.2/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/intf.cmake"
+  "/home/developer/Ascend/cann-8.5.2/lib64/cmake/ASCConfig.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.20.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.5/CMakeCXXCompiler.cmake"

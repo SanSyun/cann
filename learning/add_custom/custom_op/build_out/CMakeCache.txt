@@ -31,7 +31,7 @@ ASCEND_PACK_SHARED_LIBRARY:BOOL=False
 ASCEND_PYTHON_EXECUTABLE:STRING=python3
 
 //The directory containing a CMake configuration file for ASC.
-ASC_DIR:PATH=/home/developer/Ascend/cann-8.5.2/compiler/tikcpp/ascendc_kernel_cmake
+ASC_DIR:PATH=/home/developer/Ascend/cann-8.5.2/lib64/cmake
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line

@@ -10,7 +10,7 @@ static ge::graphStatus TilingFunc(gert::TilingContext* context)
     context->SetBlockDim(8);
     TilingDataTemplate* Tiling = context->GetTilingData<TilingDataTemplate>();
     Tiling->totalLength = totalLength;
-    Tiling->tileNum = (totalLength + 7) / 8;
+    Tiling->tileNum = 1;
 
      return ge::GRAPH_SUCCESS;
 }
